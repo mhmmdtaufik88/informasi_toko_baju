@@ -1,0 +1,142 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    background-color: white;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 50px;
+}
+
+/* container */
+.container{
+    display: grid;
+}
+
+/*header*/
+.header{
+    display: grid;
+    grid-template-areas: 
+    'hero hero feature-1'
+    'hero hero feature-2';
+}
+
+.hero{
+    grid-area: hero;
+    min-height: 350px;
+    background-image: url(contoh2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero > * {
+    display: none;
+}
+
+.features {
+    background-color: black;
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    cursor:pointer;
+}
+
+.feature-1 {
+    grid-area: feature-1;
+    background-image: url(img/contoh6.jpg);
+    background-size: cover;
+}
+
+.feature-2 {
+    grid-area: feature-2;
+    background-image: url(img/contoh7.jpg);
+    background-size: cover;
+}
+
+.features .item{
+    font-size: 2em;
+    font-weight: 150;
+}
+
+/* Navigation Bar*/
+.menu{
+    order: -1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    background-color:black;
+
+}
+
+.menu .brand{
+    font-size: 1.2em;
+    color: white;
+}
+
+.menu ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 5px;
+}
+
+.menu a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 0,9em;
+}
+
+/*katalog*/
+.gambar{
+    width: 100px;
+    grid-template-columns: repeat(auto-fit);
+}
+
+img {
+    height: 350px;
+    width: 350px;
+    grid-template-columns: repeat(auto-fit);
+}
+
+.foto{
+    margin: 5px;
+    text-align: center;
+    display: grid; grid-template-columns: 1fr;
+}
+
+.foto a{
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background: black;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*responsive breakpoint*/
+@media (max-widhth: 1024px){
+    
+    
+}
+
+@media (max-widhth: 768px){
+
+}
+
+@media (max-widhth: 500px){
+
+}
+
